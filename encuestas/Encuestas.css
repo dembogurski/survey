@@ -2,12 +2,21 @@ body{
     margin: 0;
     padding: 0;
 }
-.form{ 
+.container{ 
     margin: 20px auto;
     border: solid gray 1px;
     width: 350px;
 }
- 
+.form{
+    
+}
+.form label{
+    font-family: Monotype, Helvetica, Arial !important;
+    font-size: 16px
+}
+.form input{
+    border-radius:9px;
+}
 .error{
     color:red
 }
