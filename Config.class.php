@@ -31,7 +31,7 @@
 class Config {
 
     const LOG_FILE = "logs/logs.log";
-    const SQL_LOG_FILE = "D:/wamp/www/sistema/logs/sql.log";
+    const SQL_LOG_FILE = "D:/wamp/www/survey/logs/sql.log";
     const ERROR_LOG_FILE = "logs/error.log";
     const REPOSITORY_PATH = "/var/local/repos";  // Linux MacOSx
     const REPOSITORY_PATH_WIN = "C:/repos";          // Windows

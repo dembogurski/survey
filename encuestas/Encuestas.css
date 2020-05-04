@@ -2,20 +2,41 @@ body{
     margin: 0;
     padding: 0;
 }
+.titulo_enc{
+    font-family: arial;
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 3px;
+    background-color: lightsteelblue;
+    margin: 2px;    
+    padding: 3px;
+    border: solid gray 1px;
+}
 .container{ 
     margin: 20px auto;
     border: solid gray 1px;
-    width: 350px;
+    width: 430px;
+    background-color: #fcf8e3;
+    border-radius: 3px;
 }
 .form{
     
 }
-.form label{
-    font-family: Monotype, Helvetica, Arial !important;
-    font-size: 16px
+label{
+    font-family: arial, Helvetica  !important;
+    font-size: 18px
 }
-.form input{
-    border-radius:9px;
+.label{
+    color:purple;
+    font-weight: bolder;
+}
+
+input, select, option  {
+    border-radius: 3px;
+    font-family: arial;
+    font-size: 18px;
+    margin-bottom:8px;
 }
 .error{
     color:red

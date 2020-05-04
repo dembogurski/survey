@@ -95,7 +95,7 @@ class My {
         $this->Errno = 0;               // Error number
         $this->Error = "";              // Error name
         $this->NoLog = 0;               // No log a ROLLBACK
-        $this->MakeLog = true;
+        $this->MakeLog = false;
     }
 
     /**
@@ -202,7 +202,7 @@ class My {
             $ip = $fn->getIP();
             $user = isset($_REQUEST['usuario']) ? $_REQUEST['usuario'] : "";
             $c = new Config();            
-            $desc = fopen($c->getSQLLogFile(), "a");
+            $desc = fopen($c->getSQLLogFile(), "w");
             $datetime = date("d-m-Y H:i:s");
             $log = "($user)[$datetime],[$ip] $Qry";
             fputs($desc, $log . "\n");

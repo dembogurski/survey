@@ -1,21 +1,67 @@
 <!-- begin: headers -->   
     <head>  
-        <link rel="stylesheet" type="text/css" href="Encuestas.css?_=00000000000000" />  
+        <link rel="stylesheet" type="text/css" href="Encuestas.css?_=9999" />  
     </head>  
 <!-- end:   headers -->
 
 <!-- begin: form -->     
 <div class="container"  >
-    <table class="form" border="1" style="margin: 0 auto;width: 350px " >
+    <div class="titulo_enc"   >Encuesta sobre el Acceso a Internet en Paraguay</div>
+    <table class="form" border="0" style="margin: 0 auto;width: 350px " >
+        
         <tr>
-            <th >Encuesta sobre el Acceso a Internet en Paraguay</th>
+            <td>
+                <label class="label">Nombre</label><br>
+                <input type="text"  style="width: 100%" maxlength="60" id="nombre" required="required">
+            </td>
         </tr>
         <tr>
             <td>
-                <label>Nombre</label><br>
-                <input type="text" size="10">
+                <label class="label">N&deg; Documento</label><br>
+                <input type="text" size="20" id="doc" required="required">
             </td>
-        </tr> 
+        </tr>
+        <tr>
+            <td>
+                <label class="label">Fecha Nacimiento</label><br>
+                <input type="date"  id="fecha_nac" required="required">
+            </td>
+        </tr>
+        <tr>    
+            <td>
+                <label class="label">Nibel de Estudios</label><br>
+                <select id="cod_estudio">{estudios}</select><br>
+            </td>
+        </tr>    
+        <tr>    
+            <td>
+                <label class="label">&iquest;Cuenta con Acceso a Internet&quest;</label><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div style="background: white">
+                <label for="acceso_internet_Si">Si</label><input type="radio" id="acceso_internet_Si" name="acceso_internet" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="acceso_internet_No">No</label><input type="radio" id="acceso_internet_No" name="acceso_internet" >
+                </div><br>
+            </td>
+        </tr>  
+        <tr>
+            <td>
+                <label class="label">&iquest;Con que tipo de Dispositivos&quest;</label><br>
+                <div style="background: white">
+                {dispositivos}
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="label">Su Ubicaci&oacute;n</label><br>
+                <input type="text" size="40" id="geo" required="required">
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <input type="button" value="Enviar Encuesta">
+            </td>
+        </tr>
     </table>
 </div>
 <!-- end:   form -->
